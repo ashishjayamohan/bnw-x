@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "X.com Black and White",
+  "version": "1.0",
+  "description": "Makes x.com display in black and white",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.x.com/*", "*://twitter.com/*"],
+      "css": ["style.css"]
+    }
+  ]
+}
